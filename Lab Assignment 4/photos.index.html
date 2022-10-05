@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/37f6148738.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-color: #abcdef">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <h1>Test</h1>
+
+    <div class="header">
+        <nav>
+            <h2 class="name">Conner Mullins</h2>
+            <ul>
+                <li><a href="index.html" class="btn">Home</a></li>
+                <li><a style="background-color: midnightblue" href="photos.index.html" class="btn">Photos</a></li>
+                <li><a href="bio.index.html" class="btn">Bio</a></li>
+                <li><a href="blog.index.html" class="btn">Blog</a></li>
+                <li><a href="contact.index.html" class="btn">Contact</a></li>
+            </ul>
+        </nav>
+
+        <h1>Test</h1>
+
+        <div class="content">
+            <h2>Photos</h2>
+
+            <section class="photos min-vh-125">
+                <div class="container-lg">
+                    <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                        <div class="col">
+                            <img src="images/1.jpg" class="gallery-item" alt="Photo1">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/2.jpg" class="gallery-item" alt="Photo2">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/3.jpg" class="gallery-item" alt="Photo3">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/4.jpg" class="gallery-item" alt="Photo4">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/5.png" class="gallery-item" alt="Photo5">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/6.jpg" class="gallery-item" alt="Photo6">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/7.jpg" class="gallery-item" alt="Photo7">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/8.jpg" class="gallery-item" alt="Photo8">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/9.jpg" class="gallery-item" alt="Photo9">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/10.jpg" class="gallery-item" alt="Photo10">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/11.jpg" class="gallery-item" alt="Photo11">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/12.png" class="gallery-item" alt="Photo12">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/13.jpg" class="gallery-item" alt="Photo13">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/14.jpg" class="gallery-item" alt="Photo14">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/15.jpg" class="gallery-item" alt="Photo15">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/16.png" class="gallery-item" alt="Photo16">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/17.png" class="gallery-item" alt="Photo17">
+                        </div>
+
+                        <div class="col">
+                            <img src="images/18.png" class="gallery-item" alt="Photo18">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <div class="modal fade" id="photo-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/1.jpg" class="modal-img" alt="Modal Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+
+            <script type="text/javascript">
+                document.addEventListener("click", function (e) {
+                    if (e.target.classList.contains("gallery-item")) {
+                        const src = e.target.getAttribute("src");
+                        document.querySelector(".modal-img").src = src;
+                        const myModal = new bootstrap.Modal(document.getElementById('photo-popup'));
+                        myModal.show();
+                    }
+                })
+            </script>
+        </div>
+    </div>
+
+    <footer>
+        <div class="wrapper">
+            <a href="https://facebook.com" target="_blank" class="icon facebook">
+                <div class="tooltip">
+                    Facebook
+                </div>
+                <div>
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                </div>
+            </a>
+
+            <a href="https://twitter.com" target="_blank" class="icon twitter">
+                <div class="tooltip">
+                    Twitter
+                </div>
+                <div>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                </div>
+            </a>
+
+            <a href="https://instagram.com" target="_blank" class="icon instagram">
+                <div class="tooltip">
+                    Instagram
+                </div>
+                <div>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                </div>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
